@@ -1,5 +1,6 @@
 :root {
     --main-font: 'montserrat', arial, sans-serif;
+    --dark-branding-color: #20263b;
 }
 
 body {
@@ -8,4 +9,44 @@ body {
 
 h1 {
     font-weight: 600;
+    color: var(--dark-branding-color);
+    font-size: 50px;
+}
+
+.hero {
+    background-image: url(/imgs/Mock-upbackground.png);
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+    padding: 200px;
+}
+
+.hero .hero-card {
+    background-color: rgba(255,255,255,0.25);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 4.0px );
+-webkit-backdrop-filter: blur( 4.0px );
+border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    max-width: 600px;
+    display: block;
+    margin: 0 auto;
+    padding: 50px 80px;
+}
+
+.hero h2 {
+    font-weight: 300;
+    font-size: 20px;
+    color: var(--dark-branding-color);
+}
+
+.hero .btn-branding {
+    color: var(--dark-branding-color);
+    border: 1px solid var(--dark-branding-color);
+    background-color: transparent;
+}
+
+.hero .btn-branding:hover {
+    background-color: var(--dark-branding-color);
+    color: #ffffff;
 }
