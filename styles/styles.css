@@ -105,5 +105,6 @@ border-radius: 10px;
     }
     .project-description {
         margin-top: 50px;
+        padding: 0;
     }
 }
