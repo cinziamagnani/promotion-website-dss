@@ -14,11 +14,17 @@ h1 {
 }
 
 h2 {
-    font-size: 35px;
+    font-size: 40px;
+}
+
+p {
+    line-height: 30px;
 }
 
 .hero {
     background-image: url(/imgs/Mock-upbackground.png);
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 100vh;
     width: 100vw;
     text-align: center;
@@ -41,6 +47,7 @@ border-radius: 10px;
 .hero h2 {
     font-weight: 300;
     font-size: 20px;
+    line-height: 30px;
 }
 
 .hero .btn-branding {
@@ -55,9 +62,48 @@ border-radius: 10px;
     color: #ffffff;
 }
 
-.btn-full {
+.btn-branding-full {
     background-color: var(--dark-branding-color);
-    padding: 12px 20px;
+    padding: 16px 20px;
     color: #ffffff;
     border-radius: 5px;
+    text-decoration: none;
+}
+
+.btn-branding-full:hover {
+    color: #ffffff;
+}
+
+.project-description {
+    padding: 40px 60px;
+}
+@media (max-width: 1400px) {
+    .project-description {
+        padding-top: 15px;
+    }
+}
+@media (max-width: 960px) {
+    .section-img {
+        display: block;
+        margin: 0 auto;
+    }
+    .hero {
+        padding: 30px;
+        padding-top: 150px;
+    }
+    .hero .hero-card {
+        background-color: rgba(255,255,255,0.25);
+        box-shadow: 0 4px 12px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4.0px );
+    -webkit-backdrop-filter: blur( 4.0px );
+    border-radius: 10px;
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
+        max-width: 400px;
+        display: block;
+        margin: 0 auto;
+        padding: 20px 30px;
+    }
+    .project-description {
+        margin-top: 50px;
+    }
 }
