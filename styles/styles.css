@@ -108,3 +108,34 @@ border-radius: 10px;
         padding: 0;
     }
 }
+
+.radius-img {
+    border-radius: 15px;
+}
+
+.about-section {
+    height: 100vh;
+    width: 100vw;
+    padding: 170px 200px 200px;
+}
+
+.about-section h2 {
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.about-section-content {
+    margin: 30px;
+}
+
+@media (max-width: 960px) {
+    .about-section-content {
+        margin: 0px;
+        margin-bottom: 60px;
+        text-align: center;
+    }
+    .about-section {
+        padding: 100px;
+    }
+
+}
