@@ -1,5 +1,5 @@
 :root {
-    --main-font: 'montserrat', arial, sans-serif;
+    --main-font: 'raleway', arial, sans-serif;
     --dark-branding-color: #20263b;
 }
 
@@ -21,33 +21,45 @@ p {
     line-height: 30px;
 }
 
+a {
+    color: #20263b ;
+}
 .hero {
-    background-image: url(/imgs/Cinzia-matt-full-softbg-bluesoft.png);
+    background-image: url(/imgs/MacBook\ -\ 1background.png);
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
     width: 100vw;
     text-align: center;
-    padding: 200px;
+    padding: 80px;
 }
 
 .hero .hero-card {
-    background-color: rgba(255,255,255,0.25);
+   /* background-color: rgba(255,255,255,0.25);
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
 backdrop-filter: blur( 4.0px );
 -webkit-backdrop-filter: blur( 4.0px );
 border-radius: 10px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
-    max-width: 600px;
+    max-width: 600px; */
     display: block;
     margin: 0 auto;
     padding: 50px 80px;
 }
 
+.hero h1 {
+font-size: 64px;
+line-height: 100px;
+font-weight: 600;
+}
+
 .hero h2 {
-    font-weight: 300;
-    font-size: 20px;
-    line-height: 30px;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 72px;
+    max-width: 600px;
+    display: block;
+    margin: 0 auto;
 }
 
 .hero .btn-branding {
@@ -75,7 +87,11 @@ border-radius: 10px;
 }
 
 .project-description {
-    padding: 40px 60px;
+    padding: 0px 60px;
+}
+
+#no-top-padding {
+    padding-top: 0;
 }
 @media (max-width: 1400px) {
     .project-description {
@@ -138,4 +154,66 @@ border-radius: 10px;
         padding: 100px;
     }
 
+}
+
+.bottom {
+    background-image: url(/imgs/Hello\ Introfull-empty.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+    padding: 30px;
+}
+
+.bottom .bottom-card {
+   /* background-color: rgba(255,255,255,0.25);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 4.0px );
+-webkit-backdrop-filter: blur( 4.0px );
+border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    max-width: 600px; */
+    display: block;
+    margin: 0 auto;
+    padding: 00px 80px;
+}
+
+.bottom h2 {
+font-size: 32px;
+line-height: 48px;
+font-weight: 600;
+margin-bottom: 150px;
+}
+
+.bottom h3 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    max-width: 600px;
+    display: block;
+    margin: 0 auto;
+}
+
+.bottom .bottom-branding {
+    border: 1px solid var(--dark-branding-color);
+    background-color: transparent;
+    padding: 12px 20px;
+    border-radius: 5px;
+}
+
+.bottom .bottom-branding:hover {
+    background-color: var(--dark-branding-color);
+    color: #ffffff;
+}
+
+.members {
+    display: flex;
+    flex-direction: horizontal;
+    padding-top: 200px;
+}
+
+.bottom h3 {
+    padding: 0px 0px 0px -100px;
+    margin-top: 400px;
 }
